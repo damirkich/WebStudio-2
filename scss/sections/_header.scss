@@ -1,0 +1,76 @@
+.header {
+    @include section-padding(24px, 25px);
+
+    &__logo {
+    font-family: $second-family;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: $first-color;
+
+    &--marked {
+            color: $second-color;
+    }
+    }
+}
+
+&__content {
+        display: flex;
+        align-items: center;
+        gap: 93px;
+        height: 80px;
+    }
+
+    &__list {
+        color: $second-color;
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        align-items: center;
+
+        &--link {
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            color: $third-color;
+            transition: 0.5s;
+
+            &:hover {
+                color: $second-color;
+            }
+        }
+    }
+
+    &__info {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        color: $four-color;
+        font-style: normal;
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        svg{
+            fill: $four-color;
+        }
+        &:hover {
+            color: $second-color;
+            svg{
+                fill: $second-color;
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__address {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }

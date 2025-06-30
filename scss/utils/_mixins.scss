@@ -1,0 +1,4 @@
+@mixin section-padding($padtop, $padbottom) {
+    padding-top: $padtop;
+    padding-bottom: $padbottom;
+}
