@@ -12,9 +12,8 @@
             color: $second-color;
     }
     }
-}
 
-&__content {
+       &__content {
         display: flex;
         align-items: center;
         gap: 93px;
@@ -74,3 +73,6 @@
         align-items: center;
         gap: 50px;
     }
+}
+
+ 
