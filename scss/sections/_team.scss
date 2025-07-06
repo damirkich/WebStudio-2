@@ -1,0 +1,61 @@
+.team__section {
+    background: #f5f4fa;
+    padding-top: 94px;
+    margin-top: 94px;
+    padding-bottom: 94px;
+
+    &--title {
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: #212121;
+    }
+
+    &--list {
+        display: flex;
+        gap: 30px;
+
+        &-svg {
+            display: flex;
+            margin-top: 18px;
+            margin-left: 32px;
+
+
+        }
+
+            &-name {
+                font-family: $font-family;
+                font-weight: 500;
+                font-size: 16px;
+                letter-spacing: 0.03em;
+                text-align: center;
+                color: #212121;
+            }
+
+            &-occupation {
+                font-family: $font-family;
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing: 0.03em;
+                text-align: center;
+                color: #757575;
+            }
+
+        &-item {
+            background-color: #fff;
+            box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+            background: #fff;
+            border-radius: 0 0 4px 4px;
+            width: 270px;
+            height: 428px;
+
+        }
+    }
+}
+
+.fa-brands {
+width: 44px;
+height: 44px;
+}

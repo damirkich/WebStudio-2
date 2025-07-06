@@ -1,0 +1,33 @@
+.clients__section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+
+    &--title {
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: #212121;
+        margin-bottom: 50px;
+    }
+
+    &--list {
+        display: flex;
+        gap: 30px;
+
+        &-item {
+            border: 1px solid #afb1b8;
+            border-radius: 4px;
+            width: 170px;
+            height: 92px;
+
+            &-svg {
+            width: 106px;
+            height: 60px;
+            margin: 16px 32px;
+            }
+        }
+    }
+}
