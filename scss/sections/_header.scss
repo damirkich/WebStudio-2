@@ -1,5 +1,10 @@
 .header {
-    @include section-padding(24px, 25px);
+
+    &__nav {
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
 
     &__logo {
     font-family: $second-family;
@@ -11,6 +16,11 @@
     &--marked {
             color: $second-color;
     }
+
+    @media (max-width: 1600px) {
+        font-size: 24px;
+    }
+
     }
 
        &__content {
@@ -38,6 +48,10 @@
                 color: $second-color;
             }
         }
+
+    @media (max-width: 1600px) {
+        gap: 50px;
+    }
     }
 
     &__info {
@@ -72,7 +86,41 @@
         display: flex;
         align-items: center;
         gap: 50px;
+
+        @media (max-width: 1600px) {
+            flex-direction: column;
+            gap: 10px;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
+
+    &__burger {
+        display: none;
+
+        @media (max-width: 767px) {
+            width: 24px;
+            height: 16px;
+            position: relative;
+            border: none;
+            background: transparent;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            span {
+                width: 24px;
+                height: 2px;
+                background-color: #212121;
+
+            }
+        }
+    }
+
 }
 
  
