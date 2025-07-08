@@ -12,44 +12,57 @@
        <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__content">
-                <a class="header__logo" href="#"><span class="header__logo--marked">Web</span><span class="header__logo">Studio</span></a>
-                    <nav class="header__nav">
-                        <ul class="header__list">
-                            <li class="header__list--item">
-                                <a class="header__list--link" href="#">Студія</a>
-                            </li>
-                            <li class="header__list-item">
-                                <a class="header__list--link" href="#">Портфоліо</a>
-                            </li>
-                            <li class="header__list-item">
-                                <a class="header__list--link" href="#">Контакти</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            <address class="header__address">
-                <a href="mailto:info@devstudio.com" class="header__info">info@devstudio.com
-                    <svg width="10" height="10" viewBox="0 0 10 16" are-lable="vector" class="svg__vector">
-                        <use href="./img/Web-studio/emailhead.png"></use>
-                    </svg>
-                </a>
-                <a href="tel:+380961111111" class="header__info">+38 096 111 11 11
-                    <svg width="10" height="10" viewBox="0 0 10 16" are-lable="vector" class="svg__vector">
-                        <use href="./img/Web-studio/phonehead.png"></use>
-                    </svg>
-                </a>
-            </address>
-
-            <button class="header__burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+<header class="header">
+    <div class="container">
+        <div class="header__content">
+            <a class="header__logo" href="#"><span class="header__logo--marked">Web</span><span class="header__logo">Studio</span></a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__list--item">
+                        <a class="header__list--link" href="#">Студія</a>
+                    </li>
+                    <li class="header__list--item">
+                        <a class="header__list--link" href="#">Портфоліо</a>
+                    </li>
+                    <li class="header__list--item">
+                        <a class="header__list--link" href="#">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </header>
+        <address class="header__address">
+            <div class="header__address--div">
+                <svg width="10" height="10" viewBox="0 0 10 16" aria-label="vector" class="svg__vector">
+                    <use href="./img/Web-studio/emailhead.svg"></use>
+                </svg>
+                <a href="mailto:info@devstudio.com" class="header__info emailheader">info@devstudio.com</a>
+            </div>
+
+            <div class="header__address--div">
+                <svg width="10" height="10" viewBox="0 0 10 16" aria-label="vector" class="svg__vector">
+                    <use href="./img/Web-studio/phonehead.svg"></use>
+                </svg>
+                <a href="tel:+380961111111" class="header__info phoneheader">+38 096 111 11 11</a>
+            </div>
+        </address>
+
+        <div class="mobile-menu__social">
+    <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">LinkedIn</a></li>
+    </ul>
+</div>
+
+        <button class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    
+</header>
 
     <!-- <main class="main">
         <section class="hero__section">
@@ -274,7 +287,7 @@
                     </nav>        
                 </div>
         </footer> -->
-    
+    <script src="./js/burger-menu.js"></script>    
     <script src="https://kit.fontawesome.com/b7a512cb18.js" crossorigin="anonymous"></script>
 </body>
 </html>
